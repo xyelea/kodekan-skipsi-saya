@@ -1,6 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
+
+import arrow from "../../public/arrow.svg";
 
 import { fadeIn } from "../../utils/motion";
 
@@ -24,8 +27,8 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
       </div>
 
       <div className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white">
-        <img
-          src="/arrow.svg"
+        <Image
+          src={arrow}
           alt="arrow"
           className="w-[40%] h-[40%] object-contain"
         />

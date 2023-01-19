@@ -1,10 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { socials } from "../../constants";
 
 import styles from "../../styles";
 import { footerVariants } from "../../utils/motion";
+
+import headset from "../../public/headset.svg";
 
 const Footer = () => (
   <motion.footer
@@ -21,8 +24,8 @@ const Footer = () => (
         <button
           type="button"
           className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
-          <img
-            src="/headset.svg"
+          <Image
+            src={headset}
             alt="headset"
             className="w-[24px] h-[24px] object-contain"
           />
