@@ -1,4 +1,4 @@
-import { Footer, Navbar } from "../components";
+import { Footer, Navbar } from "../components/landing_page";
 import {
   About,
   Explore,
