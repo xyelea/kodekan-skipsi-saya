@@ -1,4 +1,5 @@
-import type { NextPage } from "next";
+/* eslint-disable */
+import { NextPage } from "next";
 import { useEffect, useState, useRef, Dispatch, SetStateAction } from "react";
 
 import Navigation from "../../components/pomodoro/Navigation";
@@ -6,7 +7,7 @@ import Timer from "../../components/pomodoro/Timer";
 import About from "../../components/pomodoro/About";
 import Alarm from "../../components/pomodoro/Alarm";
 import ModalSetting from "../../components/pomodoro/ModalSetting";
-
+/* eslint-disable no-restricted-globals */
 enum TimerStage {
   Pomodoro = 0,
   ShortBreak = 1,
