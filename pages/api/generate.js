@@ -4,9 +4,9 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
-/* eslint-disable */
-export default async function (req, res) {
-  const prompt = req.body.prompt;
+
+export default async function handleOpenApi(req, res) {
+  const { prompt } = req.body;
 
   const completion = await openai.createCompletion({
     model: "text-davinci-003",
